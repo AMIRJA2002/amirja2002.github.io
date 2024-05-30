@@ -1,0 +1,11 @@
+<!-- excel_reader/templates/excel_reader/display_data.html -->
+
+<table>
+    {% for row in data %}
+        <tr>
+            {% for col in row %}
+                <td>{{ col }}</td>
+            {% endfor %}
+        </tr>
+    {% endfor %}
+</table>

@@ -1,0 +1,7 @@
+<!-- excel_reader/templates/excel_reader/upload_file.html -->
+
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form }}
+    <button type="submit">Upload</button>
+</form>

@@ -1,0 +1,14 @@
+{% extends 'base_generic.html' %}
+
+{% block title %}Upload Excel File{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <h2 class="mb-4">Upload Excel File</h2>
+    <form method="post" enctype="multipart/form-data" class="needs-validation" novalidate>
+        {% csrf_token %}
+        {{ form }}
+        <button type="submit" class="btn btn-primary mt-3">Upload</button>
+    </form>
+</div>
+{% endblock %}
